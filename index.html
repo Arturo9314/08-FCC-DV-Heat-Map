@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualize Data with a Heat Map</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id='tooltip'>
+
+        </div>
+        <svg id="canvas">
+            <text id="title", x="460" y="25">Monthly Global Land-Surface Temperature</text>
+            <text id="description", x="550" y="45">1753 - 2015: base temperature 8.66℃</text>
+            <text transform="rotate(-90)" x="-275" y="11" class="y-label">Months</text>
+        </svg>
+        <svg id='legend'>
+            <g><rect y="0" height="27.272727272727273"></rect><rect x="36.36363636363637" y="0" width="36.36363636363637" height="27.272727272727273" style="fill: rgb(11, 26, 238);"></rect><rect x="72.72727272727273" y="0" width="36.363636363636346" height="27.272727272727273" style="fill: rgb(69, 106, 238);"></rect><rect x="109.09090909090908" y="0" width="36.36363636363639" height="27.272727272727273" style="fill: rgb(132, 157, 249);"></rect><rect x="145.45454545454547" y="0" width="36.36363636363632" height="27.272727272727273" style="fill: rgb(181, 195, 246);"></rect><rect x="181.81818181818178" y="0" width="36.363636363636374" height="27.272727272727273" style="fill: rgb(232, 240, 154);"></rect><rect x="218.18181818181816" y="0" width="36.363636363636374" height="27.272727272727273" style="fill: rgb(242, 242, 16);"></rect><rect x="254.54545454545453" y="0" width="36.3636363636364" height="27.272727272727273" style="fill: rgb(255, 158, 40);"></rect><rect x="290.90909090909093" y="0" width="36.36363636363626" height="27.272727272727273" style="fill: rgb(255, 115, 40);"></rect><rect x="327.2727272727272" y="0" width="36.363636363636374" height="27.272727272727273" style="fill: rgb(236, 4, 35);"></rect><rect x="363.63636363636357" y="0" height="27.272727272727273" style="fill: rgb(165, 0, 38);"></rect></g>
+            <g transform="translate(0,27.272727272727273)" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle"><path class="domain" stroke="currentColor" d="M0.5,10V0.5H400.5V10"></path><g class="tick" opacity="1" transform="translate(36.86363636363637,0)"><line stroke="currentColor" y2="10"></line><text fill="currentColor" y="13" dy="0.71em">2.8</text></g><g class="tick" opacity="1" transform="translate(73.22727272727273,0)"><line stroke="currentColor" y2="10"></line><text fill="currentColor" y="13" dy="0.71em">3.9</text></g><g class="tick" opacity="1" transform="translate(109.59090909090908,0)"><line stroke="currentColor" y2="10"></line><text fill="currentColor" y="13" dy="0.71em">5.0</text></g><g class="tick" opacity="1" transform="translate(145.95454545454547,0)"><line stroke="currentColor" y2="10"></line><text fill="currentColor" y="13" dy="0.71em">6.1</text></g><g class="tick" opacity="1" transform="translate(182.31818181818178,0)"><line stroke="currentColor" y2="10"></line><text fill="currentColor" y="13" dy="0.71em">7.2</text></g><g class="tick" opacity="1" transform="translate(218.68181818181816,0)"><line stroke="currentColor" y2="10"></line><text fill="currentColor" y="13" dy="0.71em">8.3</text></g><g class="tick" opacity="1" transform="translate(255.04545454545453,0)"><line stroke="currentColor" y2="10"></line><text fill="currentColor" y="13" dy="0.71em">9.5</text></g><g class="tick" opacity="1" transform="translate(291.40909090909093,0)"><line stroke="currentColor" y2="10"></line><text fill="currentColor" y="13" dy="0.71em">10.6</text></g><g class="tick" opacity="1" transform="translate(327.7727272727272,0)"><line stroke="currentColor" y2="10"></line><text fill="currentColor" y="13" dy="0.71em">11.7</text></g><g class="tick" opacity="1" transform="translate(364.13636363636357,0)"><line stroke="currentColor" y2="10"></line><text fill="currentColor" y="13" dy="0.71em">12.8</text></g></g>
+        </svg>
+    </main>
+</body>
+<script src="./script.js"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
